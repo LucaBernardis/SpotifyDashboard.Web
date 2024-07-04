@@ -3,12 +3,15 @@
     height: 40vh;
     display: grid;
     place-items: center;
+    filter: blur(0px);
     background-color: rgb(33,33,33);
     border-radius: 1.5rem;
     transition: all .15s ease-in-out;
 }
 
 .player-wrapper:hover{
+    cursor:not-allowed;
+    filter: blur(2px);
     box-shadow: 0 0 15px 0 rgba(30, 215, 96, 1);
 }
 

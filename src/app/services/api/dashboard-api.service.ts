@@ -24,7 +24,6 @@ export class DashboardApiService {
   }
 
   getDashboardConfig(): Observable<any>{
-/*     throw new Error("Not implemented");
- */    return this.http.get<any>(`${this._baseUrl}/config`, {headers: this.httpheaders});
+    return this.http.get<any>(`${this._baseUrl}/config`, {headers: this.httpheaders});
   }
 }
