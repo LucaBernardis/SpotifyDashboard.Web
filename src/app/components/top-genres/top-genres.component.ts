@@ -1,6 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Track } from '../../models/track';
-import { Album } from '../../models/album';
 import { ListItem } from '../../models/listItem';
 
 @Component({

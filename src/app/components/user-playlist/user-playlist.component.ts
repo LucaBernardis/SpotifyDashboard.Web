@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Playlist } from '../../models/playlist';
 import { ListItem } from '../../models/listItem';
 
 
