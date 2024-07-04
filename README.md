@@ -10,8 +10,8 @@ This application use the Spotify-Api to retreive data and manipulate them to get
 
 **Server:** C# minimal Api, MongoDb
 
-#### You can find the back-end project here [SpotifyDashboard.Server](https://github.com/LucaBernardis/SpotifyDashboard.Server)
-
+#### You can find the front-end project here [SpotifyDashboard.Server](https://github.com/LucaBernardis/SpotifyDashboard.Server)
+____
 The widgets that this dashboard contains are the following:
 
 - user-data
@@ -27,7 +27,7 @@ The widgets that this dashboard contains are the following:
 
 #### Authentication Method
 
-On the [Spotify-Api Authorization Documentation](https://developer.spotify.com/documentation/web-api/concepts/authorization) you will find four different types of OAuth flow to follow. Choose wisely wich authorization flow to use because they all some differences between one another. This application uses the Implicit Grant Authorization flow, it may not be the best but it works for the calls i need.
+On the [Spotify-Api Authorization Documentation](https://developer.spotify.com/documentation/web-api/concepts/authorization) you will find four different types of OAuth flow to follow. Choose wisely wich authorization flow to use because they all have some differences between one another. This application uses the Implicit Grant Authorization flow, it may not be the best but it works for the calls i need.
 
 
 
@@ -47,10 +47,9 @@ In this version of the projects all the data are retrieved with a single api cal
 | :-------- | :------- | :------------------------- |
 | `access_token` | `string` | **Required**. Your access_token |
 
-Without the access_token parameter you wont be able to make any api call to the api, so make sure the provided token is in the right format and it's not expired
-
-
 #### Return an object with all the needed properties of the widgets.
+
+Without the access_token parameter you wont be able to make any api call to the api, so make sure the provided token is in the right format and it's not expired. Here is the link to the [Implicit Grant Flow](https://developer.spotify.com/documentation/web-api/tutorials/implicit-flow) i used that explains to you the workflow and how to use his response.
 
 ___
 
@@ -65,6 +64,7 @@ In my case, the key pair will be widgetName - type.
 
 The widgetLabel till be used as a title for the widget.
 
+#### Returns a list of WidgetComponents 
 The mongo Output look somethig like this:
 
 `````
@@ -79,7 +79,7 @@ The mongo Output look somethig like this:
 }
 `````
 
-#### Returns a list of WidgetComponents 
+
 
 
 
