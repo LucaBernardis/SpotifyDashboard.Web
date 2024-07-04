@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Track } from '../../models/track';
-import { TrackService } from '../../services/track.service';
+import { TrackService } from '../../services/old-services/track.service';
 import { ListItem } from '../../models/listItem';
 
 @Component({

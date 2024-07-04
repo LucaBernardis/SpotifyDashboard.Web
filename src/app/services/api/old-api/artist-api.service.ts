@@ -1,10 +1,10 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Artist } from '../../models/artist';
-import { ArtistService } from '../artist.service';
-import { Track } from '../../models/track';
-import { Album } from '../../models/album';
+import { Artist } from '../../../models/artist';
+import { ArtistService } from '../../old-services/artist.service';
+import { Track } from '../../../models/track';
+import { Album } from '../../../models/album';
 
 
 

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TrackServiceService } from './track-service.service';
+import { TrackService } from './track.service';
 
-describe('TrackServiceService', () => {
-  let service: TrackServiceService;
+describe('TrackService', () => {
+  let service: TrackService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TrackServiceService);
+    service = TestBed.inject(TrackService);
   });
 
   it('should be created', () => {
