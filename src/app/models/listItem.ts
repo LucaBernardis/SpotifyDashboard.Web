@@ -5,8 +5,7 @@ export interface ListItem{
     // so we can use e general model to represent them
 
     mainText: string
-    secondText: string | null // nullable for albums
-    numericText: string | null // needed for albums, nullable for everything else
+    secondText: string 
     image: string
     spotifyUrl: string
 }

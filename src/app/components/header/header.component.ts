@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-user-data',
+  selector: 'app-header',
   standalone: true,
   imports: [],
-  templateUrl: './user-data.component.html',
-  styleUrl: './user-data.component.css'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
 })
-export class UserDataComponent{
+export class HeaderComponent{
 
   @Input() userName: string = '';
   @Input() image: string = '';

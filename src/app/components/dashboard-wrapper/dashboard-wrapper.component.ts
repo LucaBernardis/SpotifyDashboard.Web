@@ -1,22 +1,21 @@
 import { DashboardData } from '../../models/dashboardData';
 import { Component, OnInit } from '@angular/core';
-import { UserDataComponent } from "../user-data/user-data.component";
-import { TopArtistComponent } from "../top-artist/top-artist.component";
-import { TopGenresComponent } from "../top-genres/top-genres.component";
+import { HeaderComponent } from "../header/header.component";
+import { MultiListComponent } from "../multi-list/multi-list.component";
 import { SongPlayerComponent } from "../song-player/song-player.component";
 import { DashboardApiService } from '../../services/api/dashboard-api.service';
-import { TopTenSongsComponent } from "../top-ten-songs/top-ten-songs.component";
-import { NewReleasesComponent } from "../new-releases/new-releases.component";
-import { UserPlaylistComponent } from "../user-playlist/user-playlist.component";
-import { TopArtistSongComponent } from '../top-artist-song/top-artist-song.component';
 import { Config } from '../../models/config';
+import { CardComponent } from "../card/card.component";
+import { ListComponent } from '../list/list.component';
+import { PositionPipe } from '../../pipes/position.pipe';
 
 @Component({
     selector: 'app-dashboard-wrapper',
     standalone: true,
     templateUrl: './dashboard-wrapper.component.html',
     styleUrls: ['./dashboard-wrapper.component.css'],
-    imports: [TopArtistComponent, TopTenSongsComponent, UserDataComponent, TopGenresComponent, SongPlayerComponent, UserPlaylistComponent, TopArtistSongComponent, NewReleasesComponent]
+    
+    imports: [HeaderComponent, SongPlayerComponent, ListComponent, CardComponent, MultiListComponent, PositionPipe],
 })
 export class DashboardWrapperComponent implements OnInit{
 

@@ -3,8 +3,6 @@
 }
 
 .genres-wrapper {
-    width: 54vw;
-    height: 50vh;
     background-color: rgb(33,33,33);
     border-radius: 1.5rem;
     display: flex;

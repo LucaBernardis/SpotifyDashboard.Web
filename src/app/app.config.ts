@@ -6,6 +6,7 @@ import { httpInterceptor } from './http.interceptot';
 import { SpotifyAuthService } from './services/spotify-auth.service';
 import { tap } from 'rxjs';
 import { DashboardService } from './services/dashboard.service';
+import { PositionPipe } from './pipes/position.pipe';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -26,6 +27,7 @@ export const appConfig: ApplicationConfig = {
       deps: [SpotifyAuthService, DashboardService],
       multi: true
     },
+    PositionPipe
   ],
   
 };

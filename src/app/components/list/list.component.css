@@ -5,9 +5,9 @@
 .top-ten-songs {
     display: grid;
     background-color: rgb(33,33,33);
-    height: 72vh;
+    height: 100%;
     border-radius: 1.5rem;
-    width: 18vw;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     transition: all .15s ease-in-out;
@@ -57,7 +57,7 @@
     margin-left: 2vw;
     overflow: hidden;
     text-wrap: nowrap;
-    width: 35%;
+    width: 8vw;
 }
 
 h3,

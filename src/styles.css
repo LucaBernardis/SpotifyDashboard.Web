@@ -6,4 +6,5 @@ body {
     background: linear-gradient(20deg, rgba(25, 20, 20, 1) 73%, rgba(30, 215, 96, 1) 81%, rgba(25, 20, 20, 1) 90%);
     font-family: "Montserrat", sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }

@@ -1,3 +1,35 @@
+.w-1 {
+    width: 20%;
+}
+
+.w-2 {
+    width: 50%;
+}
+
+.w-3 {
+    width: 70%;
+}
+
+.w-4 {
+    width: 95%;
+}
+
+.h-1{
+    height: 20%;
+}
+
+.h-2{
+    height: 50%;
+}
+
+.h-3{
+    height: 75%;
+}
+
+.h-4{
+    height: 95%;
+}
+
 .wrapper{
     display: flex;
     place-items: center;
@@ -7,46 +39,26 @@
 }
 
 .left-side-elements {
-    height: 100vh;
-    width: 20vw;
     position: absolute;
     left: 0;
     display: flex;
     flex-direction: column;
     place-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
 main{
-    width: 60vw;
+    width: 55vw;
     justify-content: space-evenly;
     display: grid;
     place-items: center;
     position: absolute;
-    height: 100vh;
-}
-
-.main-wrapper{
-    height: 78vh;
-    width: 54vw;
-    display: grid;
-    justify-content: space-between;
-}
-
-.inline-wrapper{
-    height: 25vh;
-    width: 54vw;
-    display: flex;
-    justify-content: space-between;
 }
 
 .right-side-elements {
-    height: 100vh;
-    width: 20vw;
     position: absolute;
     right: 0;
-
     display: flex;
     flex-direction: column;
     place-items: center;

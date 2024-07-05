@@ -2,13 +2,13 @@ import { Component, Input } from '@angular/core';
 import { ListItem } from '../../models/listItem';
 
 @Component({
-  selector: 'app-top-genres',
+  selector: 'app-multi-list',
   standalone: true,
   imports: [],
-  templateUrl: './top-genres.component.html',
-  styleUrl: './top-genres.component.css'
+  templateUrl: './multi-list.component.html',
+  styleUrl: './multi-list.component.css'
 })
-export class TopGenresComponent {
+export class MultiListComponent {
 
   @Input() tracks: ListItem[] = []; // List of recommended tracks
   @Input() albums: ListItem[] = []; // list of artist albums
