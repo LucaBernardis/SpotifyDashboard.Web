@@ -3,7 +3,7 @@
 }
 
 .w-2 {
-    width: 50%;
+    width: 47%;
 }
 
 .w-3 {
@@ -40,7 +40,7 @@
 
 .left-side-elements {
     position: absolute;
-    left: 0;
+    left: 2rem;
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -50,18 +50,26 @@
 
 main{
     height: 90%;
-    justify-content: space-between;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: .5rem;
     place-items: center;
     position: absolute;
+    align-content:space-between;
 }
 
 .right-side-elements {
     position: absolute;
-    right: 0;
+    right: 2rem;
     display: flex;
     flex-direction: column;
     place-items: center;
     justify-content: space-evenly;
+}
+
+.inline-wrapper{
+    display: flex;
+    width: 100%;
+    height: fit-content;
 }
