@@ -2,7 +2,6 @@ import { DashboardData } from '../../models/dashboardData';
 import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
 import { MultiListComponent } from "../multi-list/multi-list.component";
-import { SongPlayerComponent } from "../song-player/song-player.component";
 import { DashboardApiService } from '../../services/api/dashboard-api.service';
 import { Config } from '../../models/config';
 import { CardComponent } from "../card/card.component";
@@ -15,7 +14,7 @@ import { PositionPipe } from '../../pipes/position.pipe';
     templateUrl: './dashboard-wrapper.component.html',
     styleUrls: ['./dashboard-wrapper.component.css'],
     
-    imports: [HeaderComponent, SongPlayerComponent, ListComponent, CardComponent, MultiListComponent, PositionPipe],
+    imports: [HeaderComponent, ListComponent, CardComponent, MultiListComponent, PositionPipe],
 })
 export class DashboardWrapperComponent implements OnInit{
 
