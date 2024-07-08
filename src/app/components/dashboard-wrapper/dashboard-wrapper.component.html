@@ -22,7 +22,7 @@
         }
     </aside>
 
-    <main class="h-4">
+    <main class=" w-2">
             @for(widget of dashboardConfig | position: 'center'; track $index){
                     @if(widget.type == "header"){
                         <app-header 
@@ -31,13 +31,13 @@
                             [image]="dashboardData.user.image">
                         </app-header>
                     }
-                    @if(widget.type == "card"){
+<!--                     @if(widget.type == "card"){
                         <app-card 
                             [class]="'w-' + widget.width + ' h-' + widget.heigth" 
                             [label]="widget.widgetLabel" 
                             [item]="dashboardData[widget.widgetProperty]">
                         </app-card>
-                    }
+                    } -->
                     @if(widget.type == "list"){
                         <app-list 
                             [class]="'w-' + widget.width + ' h-' + widget.heigth"

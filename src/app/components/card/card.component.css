@@ -17,8 +17,7 @@
 .card-img {
     width: 5vw;
     height: 5vw;
-    object-fit: cover;
-    
+    object-fit: cover;    
 }
 
 .card-data {

@@ -3,6 +3,8 @@
 }
 
 .genres-wrapper {
+    height: 100%;
+    width: 100%;
     background-color: rgb(33,33,33);
     border-radius: 1.5rem;
     display: flex;
@@ -79,8 +81,8 @@
 }
 
 .similar-songs {
-    width: 34vw;
-    height: 90%;
+    width: 28vw;
+    height: 80%;
     text-align: center;
     display: grid;
     place-items: center;
@@ -96,7 +98,7 @@
 }
 
 .rec-wrapper{
-    height: 36vh;
+    height: 100%;
     width: 100%;
     display: grid;
     place-items: center;
